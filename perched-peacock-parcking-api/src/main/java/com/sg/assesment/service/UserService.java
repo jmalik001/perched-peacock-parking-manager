@@ -1,6 +1,6 @@
-package com.devglan.service;
+package com.sg.assesment.service;
 
-import com.devglan.model.User;
+import com.sg.assesment.model.User;
 
 import java.util.List;
 

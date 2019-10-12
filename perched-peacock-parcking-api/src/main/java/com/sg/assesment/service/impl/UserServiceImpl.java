@@ -1,8 +1,9 @@
-package com.devglan.service.impl;
+package com.sg.assesment.service.impl;
 
-import com.devglan.dao.UserDao;
-import com.devglan.model.User;
-import com.devglan.service.UserService;
+
+import com.sg.assesment.dao.UserDao;
+import com.sg.assesment.model.User;
+import com.sg.assesment.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
