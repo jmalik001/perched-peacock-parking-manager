@@ -22,6 +22,7 @@
 		<azure.version>2.1.7</azure.version>
 		<springfox.version>2.9.2</springfox.version>
         <guava.version>27.0-jre</guava.version>
+       <cucumber.version>4.2.6</cucumber.version> 
 	</properties>
 
 	<dependencies>
@@ -84,6 +85,26 @@
 			<scope>test</scope>
 		</dependency>
 		
+<dependency>
+    <groupId>info.cukes</groupId>
+    <artifactId>cucumber-java</artifactId>
+    <version>1.2.4</version>
+    <scope>test</scope>
+</dependency>
+
+<dependency>
+    <groupId>info.cukes</groupId>
+    <artifactId>cucumber-junit</artifactId>
+    <version>1.2.4</version>
+    <scope>test</scope>
+</dependency>
+
+<dependency>
+    <groupId>info.cukes</groupId>
+    <artifactId>cucumber-spring</artifactId>
+    <version>1.2.4</version>
+    <scope>test</scope>
+</dependency>
 		
 	</dependencies>
 
