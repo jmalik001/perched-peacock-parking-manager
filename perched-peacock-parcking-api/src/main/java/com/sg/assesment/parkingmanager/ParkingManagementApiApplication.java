@@ -1,4 +1,4 @@
-package com.sg.assesment.parkingmanagementapi;
+package com.sg.assesment.parkingmanager;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
