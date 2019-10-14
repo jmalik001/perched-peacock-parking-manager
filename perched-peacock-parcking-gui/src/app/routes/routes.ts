@@ -1,5 +1,11 @@
 import { Routes } from '@angular/router';
-import { HomePageComponent } from './home-page/home-page.component';
-import { FormComponent } from './form/form.component';
 
-export const appRoutes: Routes = [{ path: '', component: HomePageComponent }, { path: 'form', component: FormComponent }];
+import { LoginComponent } from 'src/app/routes/login/login.component';
+import { SearchParkingComponent } from 'src/app/routes/search-parking/search-parking.component';
+import { AdminHomeComponent } from 'src/app/routes/admin-home/admin-home.component';
+
+export const appRoutes: Routes = [
+  { path: '', component: LoginComponent },
+  { path: 'availability', component: SearchParkingComponent },
+  { path: 'admin', component: AdminHomeComponent }
+];
