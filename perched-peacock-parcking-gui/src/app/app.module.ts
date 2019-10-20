@@ -1,24 +1,36 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LoggerModule, NgxLoggerLevel } from 'ngx-logger';
+import { NavComponent } from './nav/nav.component';
+import { HomeComponent } from './home/home.component';
 
-import { RoutesModule } from './routes/routes.module';
+import { SearchComponent } from './search/search.component';
+import { BookParkingComponent } from './book-parking/book-parking.component';
+import { BookingDetailsComponent } from './booking-details/booking-details.component';
+import { ContactComponent } from './contact/contact.component';
+import { AboutComponent } from './about/about.component';
+import { LoginComponent } from './login/login.component';
 
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { LoginComponent } from './routes/login/login.component';
-import { SearchParkingComponent } from './routes/search-parking/search-parking.component';
-import { AdminHomeComponent } from './routes/admin-home/admin-home.component';
 
 @NgModule({
-  declarations: [AppComponent, LoginComponent, SearchParkingComponent, AdminHomeComponent],
+  declarations: [
+    AppComponent,
+    NavComponent,
+    HomeComponent,
+    SearchComponent,
+    BookParkingComponent,
+    BookingDetailsComponent,
+    ContactComponent,
+    AboutComponent,
+    LoginComponent,
+  ],
   imports: [
     BrowserModule,
-    AdminHomeModule,
-    BrowserAnimationsModule,
-    LoggerModule.forRoot({ level: NgxLoggerLevel.INFO })
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
